@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blockbreakevent",
+	"version": "${version}",
+	"name": "blockbreakevent",
+	"description": "Issue with block breaking cancel event",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blockbreakevent/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.blockbreakevent.Blockbreakevent"
+		],
+		"fabric-datagen": [
+			"com.example.blockbreakevent.BlockbreakeventDataGenerator"
+		],
+		"client": [
+			"com.example.blockbreakevent.BlockbreakeventClient"
+		]
+	},
+	"mixins": [
+		"blockbreakevent.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
